@@ -1,0 +1,13 @@
+html {
+    color-scheme: light dark;
+}
+body {
+    font-family: "quicksand", sans-serif;
+    /* font-family: 'Roboto Mono', monospace; */
+    height: 80dvh;
+}
+@media screen and (orientation: landscape) {
+    body {
+        height: 50dvh;
+    }
+}
