@@ -3,3 +3,4 @@ A streamlined website designed to responsively maximize the font size of any inp
 
 ## Libraries
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Font Awesome](https://fontawesome.com/)
