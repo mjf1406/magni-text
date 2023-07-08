@@ -3,4 +3,4 @@ A streamlined website designed to responsively maximize the font size of any inp
 
 ## Libraries
 - (tailwindcss)[https://tailwindcss.com/]
-- [tailwindcss(https://tailwindcss.com/)
+- [tailwindcss](https://tailwindcss.com/)
