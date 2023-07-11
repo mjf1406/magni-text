@@ -9,14 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-
     <title>MagniText</title>
-
     <link rel="stylesheet" href="tailwind.css">
 </head>
 <body class="m-8 overflow-hidden">
-    <div class="text-5xl w-full text-center mb-2"><i class="fa-solid fa-magnifying-glass"></i> MagniText</div>
-    <footer class="text-xl flex flex-col justify-center items-center  w-full opacity-40 mb-3">
+    <div class="w-full mb-2 text-5xl text-center"><i class="fa-solid fa-magnifying-glass"></i> MagniText</div>
+    <footer class="flex flex-col items-center justify-center w-full mb-3 text-xl opacity-70 dark:opacity-50">
         <div class="text-center">Made with <i class="text-red-500 fa-solid fa-heart"></i> by Michael Fitzgerald</div>
         <div>
             <a href="https://github.com/mjf1406/magni-text"><i id="icon-github" class="fa-brands fa-github"></i></a>
@@ -24,25 +22,25 @@
             <a href="https://mjf1406.github.io/portfolio/"><i id="icon-portfolio" class="fa-solid fa-id-card"></i></a>
         </div>
     </footer>
-    <div class="flex flex-col gap-1 justify-center items-center h-full">
+    <div class="flex flex-col items-center justify-center h-full gap-1">
         <textarea 
-            class="p-3 rounded-xl break-normal whitespace-pre-wrap text-base" 
+            class="p-3 text-base break-normal whitespace-pre-wrap bg-gray-100 dark:bg-gray-800 rounded-xl" 
             id="text-input" 
             cols="25" 
             rows="5" 
             placeholder="Type a message that's longer than 5 characters, then hit the checkmark ✔️ button and watch MagniText do its magic...">
         </textarea>
     </div>
-    <div class="flex flex-col gap-3 justify-center items-end fixed bottom-4 right-4">
+    <div class="fixed flex flex-col items-end justify-center gap-3 bottom-4 right-4">
         <button 
             id="button-clear-text"
-            class="rounded-full p-4 text-4xl bg-red-500">
-            <i class="fa-solid fa-circle-xmark"></i>
+            class="p-4 text-4xl text-white bg-red-500 rounded-full">
+            <i class="fa-solid fa-xmark"></i>
         </button>
         <button 
             id="button-max-text"
-            class="rounded-full p-4 text-4xl bg-cyan-500">
-            <i class="fa-solid fa-circle-check"></i>
+            class="p-4 text-4xl text-white rounded-full bg-cyan-500">
+            <i class="fa-solid fa-check"></i>
         </button>
     </div>
 </body>

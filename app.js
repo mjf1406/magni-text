@@ -29,7 +29,7 @@ function maxText(){
     if (isMobileDevice() && isLandscape()) fontModifier = 1.05
 
     textArea.classList.remove(...textArea.classList)
-    textArea.classList.add('w-full','p-3','h-full','resize-none','rounded-3xl','break-normal','whitespace-pre-wrap')
+    textArea.classList.add('w-full','p-3','h-full','resize-none','rounded-3xl','break-normal','whitespace-pre-wrap', 'dark:bg-gray-800','bg-gray-100')
 
     let width = textArea.clientWidth
     let height = textArea.clientHeight
