@@ -3,8 +3,13 @@ A streamlined website designed to responsively maximize the font size of any inp
 
 ## Change Log
 - 2023/12/xx
-    - added support for Korean
-    - added support for Chinese
+    - 
+- 2023/12/29
+    - added a font size input so the user can adjust it
+    - font size can be adjusted with keyboard shortcuts and while the textarea is focused
+        - Alt + +/- and other modifiers, like Ctrl and Shift
+    - hacked together a fix for the keyboard expansion on mobile devices, need to find a better solution
+    - added crude support for non-English languages
 
 ## Libraries
 - [Tailwind CSS](https://tailwindcss.com/)
