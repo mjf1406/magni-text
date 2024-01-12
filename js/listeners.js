@@ -44,3 +44,28 @@ textArea.addEventListener('keydown', function(event) {
         adjustTextArea(fontSize, lineHeight)
     }
 });
+const maxTextButtons = document.getElementsByClassName('button-max-text')
+const clearTextButtons = document.getElementsByClassName('button-clear-text')
+
+for (let index = 0; index < maxTextButtons.length; index++) {
+    const element = maxTextButtons[index];
+    element.addEventListener('click', async function(){
+        // TODO: Find a better solution here...
+        textArea.blur()
+        maxText()
+        await sleep(500)
+        maxText()
+    })
+}
+for (let index = 0; index < clearTextButtons.length; index++) {
+    const element = clearTextButtons[index];
+    element.addEventListener('click', function(){
+        textArea.classList.remove(...textArea.classList)
+        textArea.classList.add('p-3','rounded-xl','break-normal','whitespace-pre-wrap')
+        textArea.cols = 25
+        textArea.rows = 5
+        textArea.value = ''
+        textArea.style.fontSize = '1rem'
+        textArea.style.lineHeight = '1.5rem'
+    })
+}

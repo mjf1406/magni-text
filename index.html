@@ -18,7 +18,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> <!-- Toastify.js -->
     <script src="https://colorjs.io/dist/color.global.js"></script> <!-- Color.js -->
 </head>
-<body class="m-8 overflow-hidden flex flex-col gap-2 h-screen">
+<body class="flex flex-col h-screen gap-2 m-8 overflow-hidden">
     <div class="w-full mb-2 text-5xl text-center"><i class="fa-solid fa-magnifying-glass"></i> MagniText</div>
     <footer class="flex flex-col items-center justify-center w-full text-xl opacity-70 dark:opacity-50">
         <div class="text-center">Made with <i class="text-red-500 fa-solid fa-heart"></i> by Michael Fitzgerald</div>
@@ -28,28 +28,39 @@
             <a href="https://mjf1406.github.io/portfolio/"><i id="icon-portfolio" class="fa-solid fa-id-card"></i></a>
         </div>
     </footer>
-    <label class="block text-sm font-medium text-gray-900 dark:text-white self-center mt-3">Font Size <i id="font-size-help" class="fa-regular fa-circle-question"></i></label>
-    <div class="flex flex-row justify-center items-center" name="number-input-group">
-        <button name="font-size" data-action="decrement" class="rotations-input-button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-l-lg text-sm px-4 py-2.5 dark:bg-blue-400 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-            <i class="fa-solid fa-minus"></i>
-        </button>
-        <input type="number" name="font-size" id="font-size" class="w-12 bg-gray-50 border border-gray-300 text-center text-gray-900 text-sm focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="10" required="">
-        <button name="font-size" data-action="increment" class="rotations-input-button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-r-lg text-sm px-4 py-2.5 dark:bg-blue-400 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-            <i class="fa-solid fa-plus"></i>
-        </button>
-    </div>
-    <div class="fixed flex flex-col items-end justify-center gap-3 bottom-4 right-4">
+    <label class="self-center block mt-3 text-sm font-medium text-gray-900 dark:text-white">Font Size <i id="font-size-help" class="fa-regular fa-circle-question"></i></label>
+    <div class="flex flex-row self-center gap-3 align-middle">
         <button 
-            id="button-clear-text"
-            class="p-4 text-4xl text-white bg-red-500 rounded-full">
+            class="p-4 text-4xl text-white bg-red-500 rounded-full button-clear-text">
             <i class="fa-solid fa-xmark"></i>
         </button>
+        <div class="flex flex-row items-center justify-center" name="number-input-group">
+            <button name="font-size" data-action="decrement" class="rotations-input-button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-l-lg text-sm px-4 py-2.5 dark:bg-blue-400 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+            <input type="number" name="font-size" id="font-size" class="w-12 bg-gray-50 border border-gray-300 text-center text-gray-900 text-sm focus:ring-primary-600 focus:border-primary-600 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="10" required="">
+            <button name="font-size" data-action="increment" class="rotations-input-button text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-r-lg text-sm px-4 py-2.5 dark:bg-blue-400 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
         <button 
-            id="button-max-text"
-            class="p-4 text-4xl text-white rounded-full bg-cyan-500">
+            class="p-4 text-4xl text-white rounded-full bg-cyan-500 button-max-text">
             <i class="fa-solid fa-check"></i>
         </button>
     </div>
+    
+    <!-- Submit and Clear buttons -->
+    <div class="fixed flex flex-col items-end justify-center gap-3 bottom-4 right-4">
+        <button 
+            class="p-4 text-4xl text-white bg-red-500 rounded-full button-clear-text">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button 
+            class="p-4 text-4xl text-white rounded-full bg-cyan-500 button-max-text">
+            <i class="fa-solid fa-check"></i>
+        </button>
+    </div>
+
     <div class="flex flex-col items-center justify-start h-full gap-1 mt-5">
         <textarea 
             class="p-3 text-base break-normal whitespace-pre-wrap bg-gray-100 dark:bg-gray-800 rounded-xl" 
